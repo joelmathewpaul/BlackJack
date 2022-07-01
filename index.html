@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Black Jack</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="heading">
+            <h1>BLACK JACK</h1>
+        </div>
+        <div class="cardhead">
+            <div class="player-1">
+                <h2 class="P1">P1</h2>
+                <button id="btn1" onclick="player1DrawCard()">Draw</button>
+            </div>
+            <div class="draw-result"> <p id="drawn"></p></div>
+            <div class="player-2"> 
+                <h2 class="P2">P2</h2>
+                <button id="btn2" onclick="player2DrawCard()">Draw</button>
+            </div>
+        </div>
+        <div class="chances">
+            <div class="player1chance">
+            <label for="player1-chance">Total Chances</label>
+            <p id="player1-chance">0</p>
+            </div>
+            <div class="player2chance">
+                <label for="player2-chance">Total Chances</label>
+            <p id="player2-chance">0</p>
+            </div>
+            
+            
+        </div>
+        <div class="Points">
+            <div class="player1-point">
+                <label for="player1-point">Total Points</label>
+                <p id="player1-point">0</p>
+            </div>
+            <div class="player2-point"> 
+                <label for="player2-point">Total Points</label>
+            <p id="player2-point">0</p>
+            </div>
+           
+        </div>
+        <div class="winner">
+            <div class="label">     
+                       <label for="win">Winner</label>
+            </div>
+            <div class="winner">        
+                    <p id="win">NIL</p>
+            </div>
+        </div>
+        <div class="restart">
+            <button class="restart-btn" onclick="restart()">
+                RESTART
+            </button>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>

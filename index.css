@@ -1,0 +1,110 @@
+body {
+  background-color: royalblue;
+  color: white;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: yellow;
+  text-decoration: underline;
+}
+
+.player-1,
+.player-2 {
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+  justify-cotent: center;
+  margin-bottom: 50px;
+}
+.cardhead {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  height: 100px;
+  width: 100px;
+  border-radius: 6px;
+  background-image: linear-gradient(to right, gold 0%, brown 100%);
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+}
+.restart {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+.restart-btn {
+  color: white;
+  height: 50px;
+  background-image: linear-gradient(to right, red 0%, red 100%);
+  width: 100%;
+}
+.draw-result {
+  margin-top: 100px;
+  /* float: left; */
+  font-size: 50px;
+  font-weight: bolder;
+  color: lightcyan;
+}
+
+.player1chance,
+.player2chance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 400px;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 25px;
+  /* background-color: aliceblue; */
+}
+
+.chances {
+  display: flex;
+  justify-content: space-around;
+}
+
+.player2chance {
+  position: relative;
+  left: 220px;
+}
+
+#player1-point,
+#player2-point {
+  color: rgb(197, 247, 19);
+}
+
+.player1-point,
+.player2-point {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 400px;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.Points {
+  display: flex;
+  justify-content: space-around;
+}
+.player2-point {
+  position: relative;
+  left: 220px;
+}
+
+.winner {
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+  justify-content: center;
+}
+
+.label,
+.winner {
+  font-size: 50px;
+  color: gold;
+  font-weight: bolder;
+}
